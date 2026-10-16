@@ -20,6 +20,7 @@ public class book1{
         int n = (new Scanner(System.in)).nextInt();
         book = new Book[n];
 
+
         System.out.println("Введите информацию о заказах");
         for (int i = 0; i < book.length; i++) {
             System.out.println("Заказ" + (i + 1));
