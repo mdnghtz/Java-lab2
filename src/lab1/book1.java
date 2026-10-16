@@ -112,6 +112,7 @@ public class book1{
                 }
         System.out.println("\nОтсортированный список по названиям: ");
         for (int i = 0; i < book.length; i++) {
+
             System.out.println("" + book[i]);
         }
     }
