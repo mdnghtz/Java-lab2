@@ -15,12 +15,12 @@ public class Main {
             System.out.println("Выберите пункт меню (1...7)");
             int c = (new Scanner(System.in)).nextInt();
             switch(c) {
-                case 1: book1.fillBook(); break;
-                case 2: book1.printBook(); break;
-                case 3: book1.minSearchTime(); break;
-                case 4: book1.countUnsatisfied(); break;
-                case 5: book1.sortByNumberOfBooks(); break;
-                case 6: book1.sortByTitle(); break;
+                case 1: BookService.fillBook(); break;
+                case 2: BookService.printBook(); break;
+                case 3: BookService.minSearchTime(); break;
+                case 4: BookService.countUnsatisfied(); break;
+                case 5: BookService.sortByNumberOfBooks(); break;
+                case 6: BookService.sortByTitle(); break;
                 default: break cycle;
             }
 
