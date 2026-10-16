@@ -47,6 +47,7 @@ public class book1{
                 }
             }
         }
+
         if (minBook != null) {
             System.out.println("Самый маленький срок поиска: " + minDays + "дней");
             System.out.println(minBook);
