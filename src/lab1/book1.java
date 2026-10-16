@@ -114,4 +114,18 @@ public class book1{
             System.out.println("" + book[i]);
         }
     }
+
+
+    private static int countBookss(String surname) {
+        int count = 0;
+        for (int i = 0; i < book.length; i++) {
+            if (book[i].getSurname().equals(surname)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+
 }
