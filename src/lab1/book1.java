@@ -66,6 +66,7 @@ public class book1{
         System.out.println("Количество неудовлетвореных заказов: " + count);
     }
 
+
     public static void sortByNumberOfBooks() {
         for (int i = 0; i < book.length - 1; i++)
             for (int j = 0; j < book.length - i - 1; j++)
