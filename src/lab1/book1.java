@@ -114,4 +114,19 @@ public class book1{
             System.out.println("" + book[i]);
         }
     }
+
+
+    public static void sortByTitlez() {
+        for (int i = 0; i < book.length - 1; i++)
+            for (int j = 0; j < book.length - i - 1; j++)
+                if (book[j + 1].getBtitle().compareTo(book[i + 1].getBtitle()) > 0) {
+                    Book rab = book[j];
+                    book[j] = book[j + 1];
+                    book[j + 1] = rab;
+                }
+        System.out.println("\nОтсортированный список по названиям: ");
+        for (int i = 0; i < book.length; i++) {
+            System.out.println("" + book[i]);
+        }
+    }
 }
