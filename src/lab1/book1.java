@@ -101,6 +101,7 @@ public class book1{
         return count;
     }
 
+
     public static void sortByTitle() {
         for (int i = 0; i < book.length - 1; i++)
             for (int j = 0; j < book.length - i - 1; j++)
@@ -116,16 +117,17 @@ public class book1{
     }
 
 
-    private static int countBookss(String surname) {
-        int count = 0;
+    public static void sortByTitlez() {
+        for (int i = 0; i < book.length - 1; i++)
+            for (int j = 0; j < book.length - i - 1; j++)
+                if (book[j + 1].getBtitle().compareTo(book[i + 1].getBtitle()) > 0) {
+                    Book rab = book[j];
+                    book[j] = book[j + 1];
+                    book[j + 1] = rab;
+                }
+        System.out.println("\nОтсортированный список по названиям: ");
         for (int i = 0; i < book.length; i++) {
-            if (book[i].getSurname().equals(surname)) {
-                count++;
-            }
+            System.out.println("" + book[i]);
         }
-        return count;
     }
-
-
-
 }
